@@ -1,0 +1,81 @@
+.contactsCard {
+margin-bottom: 80px;
+  .wrapper {
+    .content {
+      padding: 30px 65px;
+      box-sizing: border-box;
+      min-height: 721px;
+      background: url("../img/contactsCard.jpg");
+      background-size: cover;
+      .lg-block({
+        background-position: center;
+      });
+      .name {
+        color:#fff;
+        font:72px pacifico;
+        margin-bottom: 20px;
+        .md-block({
+          font-size: 48px;
+        text-align: center;
+        });
+        .sm-block({
+          font-size: 40px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+        });
+      }
+      .container {
+        font:300 24px roboto;
+        .md-block({
+          font-size: 18px;
+        });
+        color:#fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .md-block({
+         justify-content: center;
+        });
+        .bold {
+            font-weight: 700;
+          font-size: 24px;
+          .md-block({
+            font-size: 19px;
+          });
+        }
+        .left {
+          .md-block({
+            flex-basis: 100%;
+          text-align: center;
+          });
+          .topBlock {
+            .item {
+              margin-bottom: 20px;
+            }
+          }
+          .downBlock {
+            margin-top: 40px;
+            line-height: 1.5;
+            .item {
+              margin-bottom: 15px;
+            }
+          }
+        }
+        .right {
+          .md-block({
+            flex-basis: 100%;
+            text-align: center;
+          margin-top: 15px;
+          });
+          align-self: center;
+          .item {
+            margin-bottom: 18px;
+            a {
+              color:#fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

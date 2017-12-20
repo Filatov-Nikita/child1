@@ -1,0 +1,58 @@
+.ProgrammContent {
+  .btn {
+
+    text-align: center;
+    margin: 0 auto 15px auto;
+    max-width: 300px;
+
+    a {
+      &:hover {
+      background: @hover_main_color;
+    }
+      transition: background, 0.3s;
+      background: @main_color;
+      color: #fff;
+      display: block;
+      padding: 15px 0;
+      font: 24px roboto;
+      text-decoration: none;
+
+    }
+  }
+  p {
+    font:16px roboto;
+    color: #5a5a5a;
+    margin-bottom: 15px;
+    line-height: 1.7em;
+  }
+  .mainText {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    ul {
+      margin-left: 30px;
+      li {
+        &:before {
+          content: "";
+          display: inline-block;
+          margin-right: 15px;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #96af15;
+        }
+        font:300 18px roboto;
+        margin-bottom: 15px;
+        color: #000;
+      }
+    }
+  }
+  .aim {
+    font:italic 500 22px 'Fira sans';
+    color: #000;
+    margin-bottom: 10px;
+
+  }
+  .aim_text {
+    text-indent: 40px;
+  }
+}

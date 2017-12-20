@@ -1,0 +1,139 @@
+.aboutPage {
+  margin-top: 25px;
+
+  .childImage {
+.line {
+  height: 10px;
+  background: #f7616b;
+}
+    min-height: 400px;
+      background: url("../img/kolag.jpg");
+  }
+  .tagline {
+    padding-top: 120px;
+    color:#fff;
+    text-align: center;
+    font:50px lora;
+  }
+}
+
+.textAboutPage {
+  min-height: 300px;
+  padding-top: 25px;
+  padding-bottom: 65px;
+
+  .wrapper {
+    .headline {
+      text-align: center;
+      font:46px lora;
+      margin-bottom: 20px;
+
+    }
+    .text {
+      font:17px roboto;
+      line-height: 2.3;
+      color: #585858;
+      font-style: italic;
+      border: 10px solid transparent;
+      //border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #F8463F 20px, #F8463F 30px,transparent 30px, transparent 40px);
+      padding: 15px;
+      strong {
+        font-weight: 800;
+      }
+    }
+    .frame-outer {
+      position: relative;
+      margin: 0 auto;
+      border: 10px solid #f7616b;
+      padding: 10px;
+    }
+    .frame-inner {
+      //text-align: center;
+      position: relative;
+      border: 10px solid #dedede;
+    }
+    .frame-outer:before,
+    .frame-outer:after,
+    .frame-inner:before,
+    .frame-inner:after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-color: #F9F9F9;
+      background-image: linear-gradient(90deg, #f7616b 33%, rgba(255,255,255,0) 33%, rgba(255,255,255,0) 66%, #f7616b 66%, #f7616b),
+      linear-gradient(90deg, #f7616b 33%, rgba(255,255,255,0) 33%, rgba(255,255,255,0) 66%, #f7616b 66%, #f7616b);
+      background-repeat: no-repeat;
+      background-size: 30px 10px;
+      background-position: 0 0, 0 20px;
+    }
+    .frame-outer:before {
+      left: -10px;
+      top: -10px;
+      z-index: 3;
+    }
+    .frame-outer:after {
+      right: -10px;
+      top: -10px;
+      z-index: 3;
+      background-position: 10px 0, 10px 20px;
+    }
+    .frame-inner:before {
+      left: -30px;
+      bottom: -30px;
+      background-position: 0 10px, 0px 30px;
+    }
+    .frame-inner:after {
+      right: -30px;
+      bottom: -30px;
+      background-position: 10px 10px, 10px 30px;
+    }
+  }
+}
+
+.aimAbout {
+  padding-top: 28px;
+  padding-bottom: 45px;
+  background: #f7616b;
+  .wrapper {
+    .headline {
+      text-align: center;
+      color: #fff;
+      font:48px lora;
+      margin-bottom: 15px;
+    }
+    .text{
+      font:100 24px roboto;
+      color: #fff;
+      line-height: 1.7;
+      text-align: center;
+    }
+  }
+}
+
+.tasks {
+  padding-top: 55px;
+  padding-bottom: 35px;
+  min-height: 400px;
+  .headline {
+    text-align: center;
+    font:48px lora;
+    margin-bottom: 50px;
+  }
+  .container {
+    .row-flex();
+    .item {
+      padding-top: 20px;
+
+      .col();
+      .size(4);
+      text-align: center;
+      border-right: 5px solid #f7616b;
+      font:300 24px roboto;
+      line-height: 1.5;
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}

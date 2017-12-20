@@ -1,0 +1,302 @@
+@import "smart-grid.less";
+@import "mixed.less";
+@import "vars.less";
+@import "ThemHelp.less";
+@import "ThemHelping.less";
+@import "news.less";
+@import "about.less";
+@import "programms.less";
+@import "projectMama.less";
+@import "contacts.less";
+.reset();
+.debug {
+    //.debug(rgba(255,255,255,0.5), 1px solid #cc0000);
+}
+
+.wrapper{
+    .wrapper();
+
+}
+body {
+    background: #fff;
+
+}
+.menuS {
+    display: none;
+    .sm-block({display: block});
+
+}
+.menuS .podl {
+    background:#000;
+    opacity:0;
+    position:fixed;
+    width:100%;
+    min-height:100%;
+    z-index:100;
+    display:none;
+    left:0;
+    top:0;
+}
+
+.menuS .menu_btn {
+    width:35px;
+    height:35px;
+    background-image: url("../img/menu_small.png");
+    background-repeat: no-repeat;
+    z-index:8000;
+    position:fixed;
+    top: 25px;
+    left:20px;
+
+}
+.menuS .container .menu_btn {
+    position:static;
+    margin-top: 15px;
+    margin-left:20px;
+    background-image: url("../img/close_menu.png");
+    background-repeat: no-repeat;
+}
+.menuS .container {
+    box-sizing: border-box;
+    height:100%;
+    display: none;
+    position:fixed;
+    background:@main_color;
+    z-index:8001;
+    word-break:break-all;
+    overflow-y: auto;
+    text-align:center;
+    /*Ширина задается в настройках, и посмотрите я там сделал чтобы left и top задавались автоматически насколько это нормально ?*/
+    .text {
+        font:26px 'marck script';
+        color:#fff;
+        text-align: center;
+    }
+    ul {
+        margin-left: 10px;
+        margin-top:20px;
+        li {
+            font:28px lora;
+            margin-bottom:15px;
+
+            a {
+                transition: color , 0.2s;
+                color:@wh_color;
+                text-decoration:none;
+                &:hover {
+                    color:@hover_text_color;
+
+                }
+            }
+        }
+    }
+}
+
+header {
+    margin-top:20px;
+    margin-bottom:50px;
+    .wrapper {
+        .container {
+            .flex();
+            justify-content: space-between;
+            .logo {
+                outline: none;
+                border: 0;
+                text-align: center;
+                .sm-block({
+                    flex-basis: 100%;
+                    margin-bottom: 15px;
+                });
+            }
+            .btn {
+                .sm-block({
+                   font:italic 24px lora;
+                });
+                 .sm-block({
+                    margin: 0 auto;
+                });
+                align-self: center;
+                background: @main_color;
+                color:#fff;
+                padding: 18px 20px;
+                font:italic 30px lora;
+                cursor:pointer;
+                .hover();
+            }
+        }
+    }
+}
+nav {
+    margin-bottom:0px;
+    .sm-block({
+        display: none;
+    });
+    ul {
+        .flex();    
+        justify-content: center;
+        font:100 24px 'open sans';
+        li {
+            margin-left: 18px;
+
+        }
+        a {
+            transition: color, 0.3s;
+            text-decoration: none; 
+            &:hover {
+                color:@main_color;
+            } 
+        }
+    }
+}
+
+.slogan {
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    padding-top:80px;
+    min-height: 600px;
+    
+    .sm-block({
+        min-height: 400px;
+    });
+    background-image: url('../img/mainBig.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    .text {
+        
+        color:#c94a60;
+        -webkit-text-stroke: 1px #8c061c;
+        font:38px 'marck script';
+        .sm-block({
+                 font:28px 'marck script';
+            });
+        text-align: center;
+    }
+}
+.stat {
+    margin-bottom:80px;
+    .wrapper {
+        .container {
+            .row-flex();
+            justify-content:center;
+            .item {
+
+                .col();
+                .size(4);
+                .size-lg(6);
+                .size-sm(8);
+                .size-xs(12);
+                .lg-block({
+                    margin-bottom: 15px; 
+                });
+                text-align: center;
+                color:#868686;
+                font:20px 'open sans';
+                .head {
+                    font:bold 48px lora;
+                    color:#475d72;
+                }
+            }
+
+        }
+    }
+}
+
+.help {
+    .wrapper {
+        .text {
+            text-align: center;
+            font:60px lora;
+            color:#4c4c4c;
+            margin-bottom: 35px;
+            .sm-block({
+                font:48px lora;
+            });
+        }
+        .btn {
+            background: @main_color;
+            color:#fff;
+            max-width: 270px;
+            margin: 0 auto;
+
+            cursor: pointer;
+            padding: 10px 80px;
+            font:100 36px 'open sans';
+            margin-bottom: 50px;
+
+            .hover();
+            span {
+                position:relative;
+                img {
+                    width: 25%;
+                    position: absolute;
+                    right:-27%;
+                    top:-4px;
+                }
+            }
+        }
+    }
+}
+
+footer {
+
+    background: #2d383e;
+    padding-top:30px;
+    .sm-block({
+        padding:10px 0;
+    });
+    .wrapper {
+        display:flex;
+        flex-direction: column;
+        min-height: 300px;
+        .sm-block({
+            min-height: 0;
+        });
+        .copyright {
+            margin-top: auto;
+            color:#fff;
+            text-align: center;
+            font:20px roboto;
+        }
+        .info {
+            margin-top:50px;
+            .sm-block({
+                margin-top:20px;
+            });
+            ul {
+                .sm-block({
+                    text-align: center;
+                });
+                li {
+                    color:#b3b3b3;
+                    font:22px roboto;
+                    margin-bottom:30px;
+                    a {
+                        font:inherit;
+                        color:inherit;
+                        text-decoration: none;
+                        color:@main_color;
+                    }
+                }
+            }
+        }
+        .menu {
+            .sm-block({
+                display: none;
+            });
+            ul {
+                .flex();
+                justify-content:space-between;
+                li {
+
+                    a {
+                        color:#fff;
+                        text-decoration: none;
+                        font:22px 'open sans';
+                        .hover_text(@main_color);
+                    }
+                }
+            }
+        }
+    }
+}

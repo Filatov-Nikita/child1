@@ -1,0 +1,73 @@
+.text() {
+    text-align: center;
+}
+.img_block() {
+    display: block;
+    margin: 0 auto;
+}
+
+.flex() {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.placeholder() {
+    @color:#fff;
+    @font:20px Pacifico;
+    @indent: 12px;
+    &::-webkit-input-placeholder {color:@color; text-indent: @indent; transition: color, 0.3s;font: @font; text-align: center}
+    &::-moz-placeholder          {color:@color; text-indent: @indent; transition: color, 0.3s;font: @font}
+    &:-moz-placeholder           {color:@color; text-indent: @indent; transition: color, 0.3s;font: @font}
+    &:-ms-input-placeholder      {color:@color; text-indent: @indent; transition: color, 0.3s;font: @font}
+    &:focus::-webkit-input-placeholder {color: transparent}
+    &:focus::-moz-placeholder          {color: transparent}
+    &:focus:-moz-placeholder           {color: transparent}
+    &:focus:-ms-input-placeholder      {color: transparent}
+}
+.placeholder1() {
+    @color:#b1b1b1;
+    @font: 16px roboto;
+    @indent: 12px;
+    &::-webkit-input-placeholder {color:@color; text-indent: @indent; transition: color, 0.3s;font: @font}
+    &::-moz-placeholder          {color:@color; text-indent: @indent; transition: color, 0.3s;font: @font}
+    &:-moz-placeholder           {color:@color; text-indent: @indent; transition: color, 0.3s;font: @font}
+    &:-ms-input-placeholder      {color:@color; text-indent: @indent; transition: color, 0.3s;font: @font}
+    &:focus::-webkit-input-placeholder {color: transparent}
+    &:focus::-moz-placeholder          {color: transparent}
+    &:focus:-moz-placeholder           {color: transparent}
+    &:focus:-ms-input-placeholder      {color: transparent}
+}
+
+.m_block(@n, @content) {
+    @media screen and (max-width: ~"@{n}px") {
+        @content();
+    }
+}
+
+.unselectable() {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.hover() {
+    transition:background, 0.3s;
+    &:hover {
+        background: @hover_main_color;
+
+    }
+}
+
+.hover_text(@color) {
+    transition:color, 0.3s;
+    &:hover {
+        color: @color;
+    }
+}
+.hover_bg(@color) {
+    transition:background, 0.3s;
+    &:hover {
+        background: @color;
+    }
+}
