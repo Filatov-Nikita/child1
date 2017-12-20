@@ -1,0 +1,41 @@
+.content {
+margin-bottom: 20px;
+  .foto {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .text {
+    font:24px 'open-sans';
+    line-height: 1.7em;
+    color: #404040;
+    margin-bottom: 20px;
+    .sm-block({
+      font:20px 'open-sans';
+      line-height: 1.5em;
+    });
+    .xs-block({
+      font:18px 'open-sans';
+      line-height: 1.5em;
+    });
+  }
+  .btn{
+    background: @main_color;
+    max-width: 300px;
+    text-align: center;
+    padding: 15px 0;
+    margin: 0 auto;
+    .hover_bg(@hover_main_color);
+    a {
+      font: 26px lora;
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      height: 100%;
+
+    }
+  }
+
+}

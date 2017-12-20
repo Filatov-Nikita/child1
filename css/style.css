@@ -1,12 +1,3 @@
-.button_up {
-	position:fixed;
-	bottom:3%;
-	right:40px;
-	width:60px;
-	height:60px;
-	cursor:pointer;
-	
-}
 .themHelp {
   margin-top: 45px;
   margin-bottom: 45px;
@@ -401,6 +392,46 @@
 
 .contactsCard .wrapper .content .container .right .item a {
   color: #fff;
+}
+
+.content {
+  margin-bottom: 20px;
+}
+
+.content .foto {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.content .text {
+  font: 24px 'open-sans';
+  line-height: 1.7em;
+  color: #404040;
+  margin-bottom: 20px;
+}
+
+.content .btn {
+  background: #f7616b;
+  max-width: 300px;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0 auto;
+  transition: background, 0.3s;
+}
+
+.content .btn:hover {
+  background: #98B028;
+}
+
+.content .btn a {
+  font: 26px lora;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 body,
@@ -882,6 +913,11 @@ footer .wrapper .menu ul li a:hover {
     margin-bottom: 30px;
   }
 
+  .content .text {
+    font: 20px 'open-sans';
+    line-height: 1.5em;
+  }
+
   .wrapper {
     padding-left: 15px;
     padding-right: 15px;
@@ -948,6 +984,11 @@ footer .wrapper .menu ul li a:hover {
 @media screen and (max-width: 560px) {
   .programms .wrapper .container .item {
     width: 95%;
+  }
+
+  .content .text {
+    font: 18px 'open-sans';
+    line-height: 1.5em;
   }
 
   .wrapper {
