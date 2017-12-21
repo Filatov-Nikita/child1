@@ -1,0 +1,1 @@
+{"version":3,"sources":["admin.less"],"names":[],"mappings":"AAAA,WACE;EACE,iBAAA;EACA,qBAAA;;AAIJ;EACE,eAAA","sourcesContent":[".adminBlock {\r\n  a {\r\n    font:18px roboto;\r\n    text-decoration: none;\r\n  }\r\n}\r\n\r\n.auth {\r\n  font:24px lora;\r\n\r\n}"],"file":"admin.css"}
