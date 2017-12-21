@@ -107,6 +107,9 @@ body {
 header {
     margin-top:20px;
     margin-bottom:50px;
+    .sm-block({
+        margin-bottom:00px;
+    });
     .wrapper {
         .container {
             .flex();
@@ -117,7 +120,7 @@ header {
                 text-align: center;
                 .sm-block({
                     flex-basis: 100%;
-                    margin-bottom: 15px;
+                    margin-bottom: 20px;
                 });
             }
             .btn {
@@ -127,6 +130,13 @@ header {
                  .sm-block({
                     margin: 0 auto;
                 });
+                a {
+                    text-decoration: none;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    color:inherit;
+                }
                 align-self: center;
                 background: @main_color;
                 color:#fff;
@@ -163,6 +173,9 @@ nav {
 
 .slogan {
     margin-bottom: 50px;
+    .sm-block({
+        margin-bottom: 30px;
+    });
     box-sizing: border-box;
     padding-top:80px;
     min-height: 600px;
@@ -187,6 +200,9 @@ nav {
 }
 .stat {
     margin-bottom:80px;
+    .sm-block({
+        margin-bottom:40px;
+    });
     .wrapper {
         .container {
             .row-flex();
@@ -208,6 +224,9 @@ nav {
                     font:bold 48px lora;
                     color:#475d72;
                 }
+                .text {
+                    font-size: 18px;
+                }
             }
 
         }
@@ -224,18 +243,31 @@ nav {
             .sm-block({
                 font:48px lora;
             });
+            .xs-block({
+                font:36px lora;
+            });
         }
         .btn {
             background: @main_color;
             color:#fff;
             max-width: 270px;
             margin: 0 auto;
-
+                a {
+                    text-decoration: none;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    color: inherit;
+                }
             cursor: pointer;
             padding: 10px 80px;
             font:100 36px 'open sans';
-            margin-bottom: 50px;
 
+            margin-bottom: 50px;
+            .xs-block({
+                font-size: 30px;
+                text-align: center;
+            });
             .hover();
             span {
                 position:relative;
@@ -269,6 +301,9 @@ footer {
             color:#fff;
             text-align: center;
             font:20px roboto;
+            .sm-block({
+            font-size: 16px;
+            });
         }
         .info {
             margin-top:50px;
@@ -282,6 +317,9 @@ footer {
                 li {
                     color:#b3b3b3;
                     font:22px roboto;
+                    .sm-block({
+                        font-size: 20px;
+                    });
                     margin-bottom:30px;
                     a {
                         font:inherit;

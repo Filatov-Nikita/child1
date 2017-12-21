@@ -673,6 +673,14 @@ header .wrapper .container .btn {
   transition: background, 0.3s;
 }
 
+header .wrapper .container .btn a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+}
+
 header .wrapper .container .btn:hover {
   background: #98B028;
 }
@@ -747,6 +755,10 @@ nav ul a:hover {
   color: #475d72;
 }
 
+.stat .wrapper .container .item .text {
+  font-size: 18px;
+}
+
 .help .wrapper .text {
   text-align: center;
   font: 60px lora;
@@ -764,6 +776,14 @@ nav ul a:hover {
   font: 100 36px 'open sans';
   margin-bottom: 50px;
   transition: background, 0.3s;
+}
+
+.help .wrapper .btn a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
 }
 
 .help .wrapper .btn:hover {
@@ -983,9 +1003,13 @@ footer .wrapper .menu ul li a:hover {
     display: block;
   }
 
+  header {
+    margin-bottom: 00px;
+  }
+
   header .wrapper .container .logo {
     flex-basis: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   header .wrapper .container .btn {
@@ -1001,11 +1025,19 @@ footer .wrapper .menu ul li a:hover {
   }
 
   .slogan {
+    margin-bottom: 30px;
+  }
+
+  .slogan {
     min-height: 400px;
   }
 
   .slogan .text {
     font: 28px 'marck script';
+  }
+
+  .stat {
+    margin-bottom: 40px;
   }
 
   .stat .wrapper .container .item {
@@ -1024,12 +1056,20 @@ footer .wrapper .menu ul li a:hover {
     min-height: 0;
   }
 
+  footer .wrapper .copyright {
+    font-size: 16px;
+  }
+
   footer .wrapper .info {
     margin-top: 20px;
   }
 
   footer .wrapper .info ul {
     text-align: center;
+  }
+
+  footer .wrapper .info ul li {
+    font-size: 20px;
   }
 
   footer .wrapper .menu {
@@ -1074,6 +1114,15 @@ footer .wrapper .menu ul li a:hover {
 
   .stat .wrapper .container .item {
     width: calc(100% - 30px);
+  }
+
+  .help .wrapper .text {
+    font: 36px lora;
+  }
+
+  .help .wrapper .btn {
+    font-size: 30px;
+    text-align: center;
   }
 }
 
