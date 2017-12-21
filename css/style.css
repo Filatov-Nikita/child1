@@ -621,7 +621,8 @@ body {
 }
 
 .menuS .container .text {
-  font: 26px 'marck script';
+  margin-top: 15px;
+  font: 22px 'marck script';
   color: #fff;
   text-align: center;
 }
@@ -632,7 +633,7 @@ body {
 }
 
 .menuS .container ul li {
-  font: 28px lora;
+  font: 24px lora;
   margin-bottom: 15px;
 }
 
