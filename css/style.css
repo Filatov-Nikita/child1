@@ -995,6 +995,15 @@ footer .wrapper .menu ul li a:hover {
     line-height: 1.5em;
   }
 
+  .fotoNews .wrapper img {
+    width: 100%;
+  }
+
+  .content .text {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
   .wrapper {
     padding-left: 15px;
     padding-right: 15px;
@@ -1106,6 +1115,11 @@ footer .wrapper .menu ul li a:hover {
   .content .text {
     font: 18px 'open-sans';
     line-height: 1.5em;
+  }
+
+  .content .text {
+    font-size: 14px;
+    line-height: 1.6;
   }
 
   .wrapper {
