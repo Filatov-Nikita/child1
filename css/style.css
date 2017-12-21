@@ -563,6 +563,14 @@ body {
   background: #fff;
 }
 
+.button_up {
+  position: fixed;
+  bottom: 3%;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+}
+
 .menuS {
   display: none;
 }
