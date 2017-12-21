@@ -1,3 +1,4 @@
+@import "smart-grid";
 .adminBlock {
   a {
     font:18px roboto;
@@ -6,11 +7,58 @@
   }
 }
 
-.auth {
-  font:24px lora;
+.formAuth {
+  h2 {
+    margin-top: 25px;
+    font:48px lora;
+    margin-bottom: 25px;
+    text-align: center;
+    .sm-block({
+        font-size: 36px;
+    });
+    .form {
+      max-width: 400px;
+      margin: 5px auto 0 auto;
+      label {
+        display: block;
+        width:100%;
+        max-width: 400px;
+        margin: 15px auto 0 auto;
+        font:22px roboto;
 
-}
+      }
 
-.form {
+      input {
+        display: block;
+        width:100%;
+        margin-top:5px;
+        height:40px;
+        outline:none;
+        background:#a2a2a2;
+        border:0;
+        color:#fff;
+        text-indent: 12px;
+      }
+      input[type=submit] {
+        text-align: center;
+        margin-top: 30px;
+        max-width: 200px;
+        margin-left: 0;
+        background: #787488;
+        height:45px;
+        cursor: pointer;
+        font: 300 24px roboto;
+        transition:background, 0.3s;
+        .md-block({
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 25px;
+        });
+        &:hover {
+          background: @main_color;
+        }
+      }
+    }
+  }
 
 }
