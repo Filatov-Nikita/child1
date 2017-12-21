@@ -1038,6 +1038,26 @@ footer .wrapper .menu ul li a:hover {
 }
 
 @media screen and (max-width: 560px) {
+  .aboutPage .tagline {
+    font-size: 30px;
+  }
+
+  .textAboutPage .wrapper .headline {
+    font-size: 32px;
+  }
+
+  .textAboutPage .wrapper .text {
+    font-size: 14px;
+  }
+
+  .aimAbout .wrapper .text {
+    font-size: 20px;
+  }
+
+  .tasks .headline {
+    margin-bottom: 30px;
+  }
+
   .programms .wrapper .container .item {
     width: 95%;
   }
