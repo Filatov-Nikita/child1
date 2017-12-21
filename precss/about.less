@@ -13,6 +13,9 @@
     padding-top: 120px;
     color:#fff;
     text-align: center;
+    .md-block({
+        font-size: 36px;
+    });
     font:50px lora;
   }
 }
@@ -26,10 +29,17 @@
     .headline {
       text-align: center;
       font:46px lora;
+      .md-block({
+          font-size: 38px;
+      });
       margin-bottom: 20px;
 
     }
     .text {
+      .md-block({
+        font-size: 15px;
+        line-height: 1.8;
+      });
       font:17px roboto;
       line-height: 2.3;
       color: #585858;
@@ -100,9 +110,16 @@
       text-align: center;
       color: #fff;
       font:48px lora;
+      .md-block({
+        font-size: 38px;
+      });
       margin-bottom: 15px;
     }
     .text{
+    .md-block({
+      font-size: 22px;
+      line-height: 1.5;
+    });
       font:100 24px roboto;
       color: #fff;
       line-height: 1.7;
@@ -116,17 +133,31 @@
   padding-bottom: 35px;
   min-height: 400px;
   .headline {
+    .md-block({
+      font-size: 38px;
+    });
     text-align: center;
     font:48px lora;
     margin-bottom: 50px;
   }
   .container {
     .row-flex();
+    .md-block({
+      justify-content: center;
+    });
     .item {
       padding-top: 20px;
-
+      padding-bottom: 20px;
       .col();
       .size(4);
+      .size-md(10);
+      .md-block({
+        border-bottom: 5px solid #f7616b;
+      border-right: none;
+        &:last-child {
+
+        }
+      });
       text-align: center;
       border-right: 5px solid #f7616b;
       font:300 24px roboto;
